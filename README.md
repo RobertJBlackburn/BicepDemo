@@ -1,0 +1,2 @@
+# BicepDemo
+Test Bicep deployments

@@ -1,5 +1,4 @@
-param storageAccounts_bicepstoragetemplate_name string = 'bicepstorage03'
-
+param storageAccounts_bicepstoragetemplate_name string  
 @allowed([
   'Premium_LRS' 
   'Premium_ZRS' 
@@ -10,7 +9,7 @@ param storageAccounts_bicepstoragetemplate_name string = 'bicepstorage03'
   'Standard_RAGZRS' 
   'Standard_ZRS'
 ])
-param skuname string =  'Standard_LRS' 
+param skuname string  
 
 resource storageAccounts_bicepstoragetemplate_name_resource 'Microsoft.Storage/storageAccounts@2021-04-01' = {
   name: storageAccounts_bicepstoragetemplate_name
